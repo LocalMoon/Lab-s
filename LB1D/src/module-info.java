@@ -1,2 +1,0 @@
-module LB1 {
-}
