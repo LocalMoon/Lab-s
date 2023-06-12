@@ -1,0 +1,244 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body:not(h2){
+            text-align: center;
+        }
+         .wrapper{
+            width: 100vw;
+            height: 110vh;
+            background: rgb(238,174,202);
+            background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+        }
+        .main{
+            position: absolute;
+            top: 9%;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        table{
+            display: block;
+            border: 1px solid #140253;
+            border-collapse: collapse;
+            max-height: 400px;
+            overflow: auto;
+            border-radius: 4px;
+            box-shadow: 0 4px 4px rgba(3, 12, 124, 0.3);
+            background-color: rgba(221, 245, 252, 0.897);
+        }
+        
+        tr{
+            border: 3px solid #222;
+
+        }
+        th{
+           
+            background-color: #2e03a7;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .sticky{
+            /* position: sticky;
+            top: 0px; */
+            outline: 1px solid #222;
+            /* background-color: #4707be; */
+        }
+        th, td{
+            padding: 5px 18px;
+            /* border: 3px solid #222; */
+        }
+        thead{
+            background-color: #2e03a7;
+            position: sticky;
+            top: 0px;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        .edit:link, .edit:visited{
+            font-weight: 600;
+            color: rgb(32, 202, 32);
+        }
+        .delete:link, .delete:visited{
+            font-weight: 600;
+            color: rgb(44, 2, 92);
+        }
+        .btn{
+            display: block;
+            width: 50%;
+            padding: 7px 0;
+            background: #2c02c2;
+            border-radius: 10px;
+            border: none;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 20px;
+            color: #fff;
+            margin: 0 auto;
+        }
+       
+        .main-f{
+            padding-top: 100px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        main h2{
+            margin-bottom: 40px;
+            color: #002F5E;
+            padding-top: 10px;
+        }
+
+        .inpt__cont{
+            margin-top: 20px;
+        }
+        
+        .btn-f{
+            min-width: 20px;
+            min-height: 10px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 10;
+            color: #313133;
+            background: #4FD1C5;
+            background-image: radial-gradient(circle, #8CD1FF 8%,#6EC5EB 87%);
+            border: none;
+            border-radius: 100px;
+            box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+            transition: all 0.3s ease-in-out 0s;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            padding: 10px;
+            margin-left: 20px;
+            }
+
+        .btn-f::before {
+            content: '';
+            border-radius: 100px;
+            min-width: calc(168px + 12px);
+            min-height: calc(60px + 12px);
+            border: 6px solid #ADD2F7;
+            box-shadow: 0 0 60px #74baff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: all .3s ease-in-out 0s;
+            }
+
+        .btn-f:hover, .btn-f:focus {
+            color: #313133;
+            transform: translateY(-6px);
+            }
+
+        .btn-f:hover::before, .btn-f:focus::before {
+            opacity: 1;
+            }
+
+        .btn-f::after {
+            content: '';
+            width: 30px; height: 30px;
+            border-radius: 100%;
+            border: 6px solid #867efd;
+            box-shadow: 0 0 60px #6127e9;
+            position: absolute;
+            z-index2: -1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring 1s infinite;
+            }
+
+        .btn-f:hover::after, .btn-f:focus::after {
+            animation: none;
+            display: none;
+            }
+
+            @keyframes ring {
+            0% {
+                width: 30px;
+                height: 30px;
+                opacity: 10;
+            }
+            100% {
+                width: 300px;
+                height: 300px;
+                opacity: 0;
+            }
+            }
+        
+
+    table::-webkit-scrollbar {
+        width: 3px;                                /* ширина scrollbar */
+        background-color: transparent;        /* цвет дорожки */
+    }   
+
+    table::-webkit-scrollbar-thumb {
+        background-color: #1d0135;    /* цвет плашки */
+        border-style: none;                             /* padding вокруг плашки */
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    input, textarea{
+        
+        border-radius: 4px;
+        padding: 5px;
+        font-family: 'Manrope';
+        border: none;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    textarea{
+        resize: none;
+    }
+    textarea:focus{
+        outline: none;
+    }
+    input:focus{
+        outline: none;
+    }
+    label{
+        font-weight: 600;
+    }
+
+
+    .button{
+        position: relative;
+    }
+
+    .block{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index2: 3;
+        background-color: transparent;
+        top: 0;
+        left: 0;
+    }
+    .error{
+        position: absolute;
+        bottom: -15px;
+        font-size: 12px;
+
+    }
+
+    .hidden{
+        display: none;
+    }
+    

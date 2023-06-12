@@ -1,0 +1,10 @@
+CREATE TABLE `auto_salon`.`auto` ( `auto_mark` VARCHAR(50) NOT NULL , `model` VARCHAR(50) NOT NULL , `year` INT NOT NULL  , `price` FLOAT NOT NULL , PRIMARY KEY (`auto_mark`)) ENGINE = InnoDB;
+INSERT INTO auto VALUES 
+  ('Ford', 'Mustang GT', 2019, 2300.00),
+  ('Audi', 'R8 quatro', 2019, 2500.10),
+  ('Chevrolet', 'Corvette C6', 2006, 3650.00),
+  ('Dodge', 'Charger', 2019, 3750.00),
+  ('Lamborghini', 'Aventador', 2014, 25000.00),
+  ('Ferrari', 'Enzo', 2004, 133957.37);
+  
+
